@@ -3,7 +3,7 @@
 def title_to_number(s)
     result = 0
     s.each_char.to_a.each {|n| result = result * 26 + n.ord - 64 }
-    return result
+    result
 end
 
 p title_to_number("AAA")
