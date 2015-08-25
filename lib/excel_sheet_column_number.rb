@@ -2,9 +2,7 @@
 # @return {Integer}
 def title_to_number(s)
     result = 0
-    s.each_char.to_a.each do |n|
-    	result = result * 26 + n.ord - 64
-    end
+    s.each_char.to_a.each {|n| result = result * 26 + n.ord - 64 }
     return result
 end
 
